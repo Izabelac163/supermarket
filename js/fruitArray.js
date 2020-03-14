@@ -3,6 +3,9 @@
 // store fruit data in a structure (object)
 // list -> Arrays of objects
 
+// primitive types of data - Number, String, Boolean
+// Reference types of data = Objects - Array and Objects and functions
+
 var apple = {
   imgSource: "images/apple.jpg",
   color: 100,
@@ -86,8 +89,6 @@ var mainContainer = document.getElementById("mainContainer"); //find the node wi
 
 // takes list of fruit object => creates fruit gallery
 function createFruitGallery(anyArray) {
-  // console.log(JSON.stringify(anyArray));
-
   var myRack = installRack();
   // loop thru the fruit array
   for (var i = 0; i < anyArray.length; i++) {

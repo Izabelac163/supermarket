@@ -1,0 +1,8 @@
+// Project supermarket
+
+1. created the veg fruit section 
+2. how did we get info of fruits and veg show up in the DOM
+3. why did we use objects and arrays instead of string numbers boolean..or storing each item in a variable?
+4. data types
+
+
