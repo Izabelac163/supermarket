@@ -1,0 +1,64 @@
+.dialog {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: auto;
+  width: 20vw;
+  padding: 10px;
+  background: linear-gradient(to top, #00ccff 0%, #00ff00 100%);
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+@keyframes example {
+  from {
+    background-color: linear-gradient(to top, #00ccff 0%, #00ff00 100%);
+    /* the form has to have a bg color otherwise after the */
+  } /*animations finishes the bg will be clear */
+  to {
+    background-color: yellow;
+  }
+}
+form:hover {
+  /* transform: rotate(180deg); */
+  width: 500px;
+  height: 500px;
+}
+
+form > .myInput {
+  margin: 10px 0;
+  border: 2px solid grey;
+  padding: 10px;
+  font-size: 10px;
+  width: 90%;
+}
+
+.myBtn {
+  width: 90%;
+  height: 40px;
+  background-color: rgb(255, 6, 143);
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-family: "Zhi Mang Xing", cursive;
+  transition-duration: 5s;
+  border-radius: 50%;
+}
+
+button:hover {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 12px 16px rgb(0, 119, 255), 17px 50px rgb(0, 47, 255);
+  transform: rotate3d(1, 0, 2, 3600deg);
+}

@@ -16,8 +16,8 @@ var apple = {
     price: "20Kc",
     quantityInStock: 20,
     expiryDate: addDaysFromToday(7),
-    quantitySold: 0
-  }
+    quantitySold: 0,
+  },
 };
 
 var banana = {
@@ -30,8 +30,8 @@ var banana = {
     price: "20Kc",
     quantityInStock: 20,
     expiryDate: addDaysFromToday(7),
-    quantitySold: 0
-  }
+    quantitySold: 0,
+  },
 };
 
 var blueberry = {
@@ -44,8 +44,8 @@ var blueberry = {
     price: "20Kc",
     quantityInStock: 20,
     expiryDate: addDaysFromToday(7),
-    quantitySold: 0
-  }
+    quantitySold: 0,
+  },
 };
 
 var orange = {
@@ -58,8 +58,8 @@ var orange = {
     price: "20Kc",
     quantityInStock: 20,
     expiryDate: addDaysFromToday(7),
-    quantitySold: 0
-  }
+    quantitySold: 0,
+  },
 };
 
 var grapes = {
@@ -72,11 +72,11 @@ var grapes = {
     price: "20Kc",
     quantityInStock: 20,
     expiryDate: addDaysFromToday(7),
-    quantitySold: 0
+    quantitySold: 0,
   },
-  showName: function() {
+  showName: function () {
     return this.name;
-  }
+  },
 };
 
 // list of fruits - Global variables
@@ -95,8 +95,13 @@ function createFruitGallery(anyArray) {
     // create container node to hold each fruit image
     var myFruitContainerCreated = setupFruitContainer(anyArray[i]);
 
-    // Add click event listener to the Fruit Container
+    //************************************************************************ */
+    // // Add click EVENT LISTENER to the Fruit Container
+    // Event handlers may be attached to various objects (including DOM elements, document, the window object, etc.).
+    // When an event occurs, an event object is created and passed sequentially to the event listeners.
+
     myFruitContainerCreated.addEventListener("click", handleFruitClick);
+    //************************************************************************ */
 
     // giving each fruit item to this setImage function
     // setupImageElement function takes a fruit and adds it to the fruitDiv in the DOM...
