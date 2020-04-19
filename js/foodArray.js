@@ -8,8 +8,8 @@ var milk = {
     price: "10Kc",
     quantityInStock: 20,
     expiryDate: addDaysFromToday(7),
-    quantitySold: 0
-  }
+    quantitySold: 0,
+  },
 };
 
 var cheese = {
@@ -22,8 +22,8 @@ var cheese = {
     price: "24Kc",
     quantityInStock: 20,
     expiryDate: addDaysFromToday(7),
-    quantitySold: 0
-  }
+    quantitySold: 0,
+  },
 };
 
 var iceCream = {
@@ -36,8 +36,8 @@ var iceCream = {
     price: "15Kc",
     quantityInStock: 20,
     expiryDate: addDaysFromToday(7),
-    quantitySold: 0
-  }
+    quantitySold: 0,
+  },
 };
 
 var egg = {
@@ -50,8 +50,8 @@ var egg = {
     price: "30Kc",
     quantityInStock: 20,
     expiryDate: addDaysFromToday(7),
-    quantitySold: 0
-  }
+    quantitySold: 0,
+  },
 };
 
 var dairyArray = [milk, cheese, iceCream, egg];
@@ -68,8 +68,8 @@ var cake = {
     price: "99Kc",
     quantityInStock: 20,
     expiryDate: addDaysFromToday(7),
-    quantitySold: 0
-  }
+    quantitySold: 0,
+  },
 };
 
 var chocolate = {
@@ -82,8 +82,8 @@ var chocolate = {
     price: "45Kc",
     quantityInStock: 20,
     expiryDate: addDaysFromToday(7),
-    quantitySold: 0
-  }
+    quantitySold: 0,
+  },
 };
 
 var cookie = {
@@ -96,8 +96,8 @@ var cookie = {
     price: "34Kc",
     quantityInStock: 20,
     expiryDate: addDaysFromToday(7),
-    quantitySold: 0
-  }
+    quantitySold: 0,
+  },
 };
 
 var cottoncandy = {
@@ -110,8 +110,8 @@ var cottoncandy = {
     price: "30Kc",
     quantityInStock: 20,
     expiryDate: addDaysFromToday(7),
-    quantitySold: 0
-  }
+    quantitySold: 0,
+  },
 };
 
 var sweetArray = [cake, cookie, chocolate, cottoncandy];
@@ -128,8 +128,8 @@ var burger = {
     price: "40Kc",
     quantityInStock: 20,
     expiryDate: addDaysFromToday(7),
-    quantitySold: 0
-  }
+    quantitySold: 0,
+  },
 };
 
 var fries = {
@@ -142,8 +142,8 @@ var fries = {
     price: "26Kc",
     quantityInStock: 20,
     expiryDate: addDaysFromToday(7),
-    quantitySold: 0
-  }
+    quantitySold: 0,
+  },
 };
 
 var pizza = {
@@ -156,8 +156,8 @@ var pizza = {
     price: "100Kc",
     quantityInStock: 20,
     expiryDate: addDaysFromToday(7),
-    quantitySold: 0
-  }
+    quantitySold: 0,
+  },
 };
 
 var taco = {
@@ -171,8 +171,8 @@ var taco = {
     price: "80Kc",
     quantityInStock: 20,
     expiryDate: addDaysFromToday(7),
-    quantitySold: 0
-  }
+    quantitySold: 0,
+  },
 };
 
 var junkFoodArray = [fries, burger, taco, pizza];

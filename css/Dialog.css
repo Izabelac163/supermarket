@@ -19,30 +19,19 @@ form {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  font-size: 20px;
-  animation-name: example;
-  animation-duration: 4s;
+  font-size: 25px;
 }
 
-@keyframes example {
-  from {
-    background-color: linear-gradient(to top, #00ccff 0%, #00ff00 100%);
-    /* the form has to have a bg color otherwise after the */
-  } /*animations finishes the bg will be clear */
-  to {
-    background-color: yellow;
-  }
-}
 form:hover {
   /* transform: rotate(180deg); */
-  border: 2px solid hotpink;
+  border: 1px solid deeppink;
 }
 
 form > .myInput {
   margin: 10px 0;
   border: 2px solid grey;
-  padding: 10px;
-  font-size: 25px;
+  padding: 1px;
+  font-size: 20px;
   width: 80%;
 }
 
@@ -53,12 +42,10 @@ form > .myInput {
   margin-bottom: 20px;
   font-size: 20px;
   font-family: "Zhi Mang Xing", cursive;
-  transition-duration: 5s;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 button:hover {
   background-color: rgb(255, 255, 255);
-  box-shadow: 12px 16px rgb(0, 119, 255), 17px 50px rgb(0, 47, 255);
-  transform: rotate3d(1, 0, 2, 3600deg);
 }

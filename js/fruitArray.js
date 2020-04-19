@@ -89,6 +89,7 @@ var mainContainer = document.getElementById("mainContainer"); //find the node wi
 
 // takes list of fruit object => creates fruit gallery
 function createFruitGallery(anyArray) {
+  localStorage.setItem("fruits", JSON.stringify(fruitArray));
   var myRack = installRack();
   // loop thru the fruit array
   for (var i = 0; i < anyArray.length; i++) {

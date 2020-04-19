@@ -8,8 +8,8 @@ var broccoli = {
     price: "20Kc",
     quantityInStock: 20,
     expiryDate: addDaysFromToday(7),
-    quantitySold: 0
-  }
+    quantitySold: 0,
+  },
 };
 
 var tomato = {
@@ -22,8 +22,8 @@ var tomato = {
     price: "20Kc",
     quantityInStock: 20,
     expiryDate: addDaysFromToday(7),
-    quantitySold: 0
-  }
+    quantitySold: 0,
+  },
 };
 
 var sweetCorn = {
@@ -36,8 +36,8 @@ var sweetCorn = {
     price: "20Kc",
     quantityInStock: 20,
     expiryDate: addDaysFromToday(7),
-    quantitySold: 0
-  }
+    quantitySold: 0,
+  },
 };
 
 var carrot = {
@@ -50,8 +50,8 @@ var carrot = {
     price: "24Kc",
     quantityInStock: 20,
     expiryDate: addDaysFromToday(7),
-    quantitySold: 0
-  }
+    quantitySold: 0,
+  },
 };
 
 var vegArray = [broccoli, tomato, sweetCorn, carrot];
