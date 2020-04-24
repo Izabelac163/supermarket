@@ -119,7 +119,6 @@ h2 {
 .door-plant-region {
   display: flex;
   align-items: flex-start;
-  border: 1px solid black;
 }
 
 .security {

@@ -14,80 +14,6 @@ function addDaysFromToday(daysToAdd) {
   return convertMilisecondsToDate(result);
 }
 
-function createFormWithInputAndLabel() {
-  var productInfoForm = document.createElement("form");
-  // setting an ID to the form.
-  productInfoForm.setAttribute("id", "myForm");
-
-  var inputFruitNameLabel = document.createElement("LABEL");
-  inputFruitNameLabel.htmlFor = "name";
-  inputFruitNameLabel.innerHTML = "Name";
-
-  var inputFruitName = document.createElement("input");
-  inputFruitName.id = "inputname";
-  inputFruitName.type = "text";
-  inputFruitName.name = "name";
-
-  //----------------------------------------------------------
-  var inputColorLabel = document.createElement("LABEL");
-  inputColorLabel.htmlFor = "color";
-  inputColorLabel.innerHTML = "Color";
-
-  var inputColor = document.createElement("input");
-  inputColor.id = "inputcolor";
-  inputColor.type = "text";
-  inputColor.name = "color";
-  //----------------------------------------------------------
-  var inputPriceLabel = document.createElement("LABEL");
-  inputPriceLabel.htmlFor = "price";
-  inputPriceLabel.innerHTML = "Price";
-
-  var inputPrice = document.createElement("input");
-  inputPrice.id = "inputprice";
-  inputPrice.type = "text";
-  inputPrice.name = "price";
-  //----------------------------------------------------------
-
-  var inputQuantityLabel = document.createElement("LABEL");
-  inputQuantityLabel.htmlFor = "quantity";
-  inputQuantityLabel.innerHTML = "Quantity";
-
-  var inputQuantity = document.createElement("input");
-  inputQuantity.id = "inputquantity";
-  inputQuantity.type = "text";
-  inputQuantity.name = "quantity";
-
-  //----------------------------------------------------------
-  var inputFruitOriginLabel = document.createElement("LABEL");
-  inputFruitOriginLabel.htmlFor = "origin";
-  inputFruitOriginLabel.innerHTML = "Origin";
-
-  var inputFruitOrigin = document.createElement("input");
-  inputFruitOrigin.id = "inputOrigin";
-  inputFruitOrigin.type = "text";
-  inputFruitOrigin.name = "origin";
-  // Each input needs id,name,type and a Label field
-  //Add class for css to input fields
-  inputFruitName.className = "myInput";
-  inputColor.className = "myInput";
-  inputPrice.className = "myInput";
-  inputQuantity.className = "myInput";
-  inputFruitOrigin.className = "myInput";
-
-  productInfoForm.appendChild(inputFruitNameLabel);
-  productInfoForm.appendChild(inputFruitName);
-  productInfoForm.appendChild(inputColorLabel);
-  productInfoForm.appendChild(inputColor);
-  productInfoForm.appendChild(inputPriceLabel);
-  productInfoForm.appendChild(inputPrice);
-  productInfoForm.appendChild(inputQuantityLabel);
-  productInfoForm.appendChild(inputQuantity);
-  productInfoForm.appendChild(inputFruitOriginLabel);
-  productInfoForm.appendChild(inputFruitOrigin);
-
-  return productInfoForm;
-}
-
 // Fruit Click Handler
 
 // first u click on a fruit
@@ -119,12 +45,11 @@ function createDialog() {
   });
 
   //  =================================================================
-    myForm.addEventListener("formdata", getFormData);
+  myForm.addEventListener("formdata", getFormData);
   //  =================================================================
-
+  myBtn.addEventListener("click", destroyDialog);
   //myForm.addEventListener("formdata", (e) => {
   //  console.log("formdata event fired");
-
 
   //        // formData.entries() method gives us all the form input fields in [Key, Value] pairs::::
   //        // it returns an Iterator...so we have to use for of loop..
@@ -184,15 +109,14 @@ function submitFormDataHandler(e) {
 
 // Event handler for formdata event
 function getFormData(e) {
-	console.log("This handler function is called when formdata event is fired");
-	// formData.entries() method gives us all the form input fields in [Key, Value] pairs::::
-	// it returns an Iterator...so we have to use for of loop..
-	var fruitObjectFromFormData = {};
-	for (let formFields of e.formData.entries()) {
-		fruitObjectFromFormData[formFields[0]] = formFields[1];
-	}
-	console.log(fruitObjectFromFormData);
-	destroyDialog();
+  console.log("This handler function is called when formdata event is fired");
+  // formData.entries() method gives us all the form input fields in [Key, Value] pairs::::
+  // it returns an Iterator...so we have to use for of loop..
+  var fruitObjectFromFormData = {};
+  for (let formFields of e.formData.entries()) {
+    fruitObjectFromFormData[formFields[0]] = formFields[1];
+  }
+  console.log(fruitObjectFromFormData);
 }
 
 // function createFruitObjectFromUserInput(formDataArray) {
@@ -216,4 +140,3 @@ function getFormData(e) {
 
 // localStorage.setItem("fruits", JSON.stringify(oldFruitArray));
 // destroyDialog();
-
