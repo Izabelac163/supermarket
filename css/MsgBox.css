@@ -1,0 +1,84 @@
+.msgBox {
+  justify-content: center;
+  background: rebeccapurple;
+  color: white;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  top: 60%;
+  left: 30%;
+  border-radius: 30px;
+  display: none;
+}
+
+.msgBox.msgBoxShow {
+  display: flex;
+}
+
+.securityMsgBox.msgBoxShow {
+  display: flex;
+}
+
+.customerIcon {
+  color: orangered;
+  margin-left: 10px;
+  font-size: 30px;
+}
+/* top: 72%;
+  left: 30%; */
+
+.securityIcon {
+  color: chartreuse;
+  font-size: 20px;
+}
+
+.securityMsgBox {
+  justify-content: space-evenly;
+  background: red;
+  color: white;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  top: 5%;
+  left: 55%;
+  border-radius: 30px;
+  display: none;
+}
+
+.dogMsgBox {
+  justify-content: space-evenly;
+  background: black;
+  color: white;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  top: 15%;
+  left: 80%;
+  border-radius: 30px;
+  display: none;
+}
+
+.dogMsgBox.dogMsgBoxShow {
+  display: flex;
+}
+
+.employeeMsgBox {
+  justify-content: space-evenly;
+  background: orangered;
+  color: white;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  top: 15%;
+  left: 80%;
+  border-radius: 30px;
+  display: none;
+}
+
+.employeeMsgBox.employeeMsgBoxShow {
+  display: flex;
+}

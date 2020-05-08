@@ -5,6 +5,9 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" href="css/styles.css" type="text/css" />
     <link rel="stylesheet" href="css/Dialog.css" type="text/css" />
+    <link rel="stylesheet" href="css/MsgBox.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+    crossorigin="anonymous">
     <title>February Tasks</title>
   </head>
   <body>
@@ -16,6 +19,7 @@
       <section class="middle-section">
         </div>
         <div class="door-plant-region">
+         
           <div class="door">
             <div class="jip-container"><h2>JIP</h2></div>
             <img src="images/gate-transparent.png" alt="door" width="200" />
@@ -23,22 +27,33 @@
           <div class="plant">
             <img src="images/plant.png" alt="plant" height="100" width="100" />
           </div>
+
+          <i class="fas fa-user userIcon securityIcon"></i>
           <div class="security">
             <img src="images/security.png" alt="security" height="180" />
+            <div class="securityMsgBox"></div>
           </div>
+
+          <i class="fas fa-user userIcon dogIcon"></i>
           <div class="gaurdDog">
             <img src="images/dog.png" alt="dog" height="120" width="100" />
+            <div class="dogMsgBox"></div>
           </div>
         </div>
 
+        <i class="fas fa-user userIcon customerIcon"></i>
         <div class="customer">
           <img src="images/customer.gif" alt="red" height="300" width="200" />
+        <div class="msgBox"> </div>
         </div>
+        
       </section>
 
       <section class="right-section">
-        <div class="cash-register">
-          <img src="images/cashier-jip.png" alt="cashier" />
+        <icon class="fas fa-user userIcon employeeIcon"></i>
+        <div class="cashier">
+          <img src="images/cashier-jip.png" alt="cashier"/>
+          <div class="employeeMsgBox"></div>
         </div>
         <div class="conveyor">
           <img src="images/belt.gif" alt="belt" />
@@ -46,7 +61,10 @@
       </section>
     </section>
   </body>
-  <script type="text/javascript" src="customer.js"></script>
+  <script type="text/javascript" src="js/empoyee.js"></script>
+  <script type="text/javascript" src="js/dog.js"></script>
+  <script type="text/javascript" src="js/security.js"></script>
+  <script type="text/javascript" src="js/customer.js"></script>
   <script type="text/javascript" src="js/inputAndLabels.js"></script>
   <script type="text/javascript" src="js/fruitClickHandler.js"></script>
   <script type="text/javascript" src="js/fruitArray.js"></script>

@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Sriracha|Zhi+Mang+Xing&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
 
 html,
 body {
@@ -7,11 +8,10 @@ body {
   margin: 0;
   height: 100%;
   width: 100%;
-  background-image: url("../images/stripbackground.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  font-family: "Zhi Mang Xing", cursive;
-  font-size: 60px;
+  background: grey;
+  /*font-family: "Zhi Mang Xing", cursive; */
+  font-family: "Raleway";
+  font-size: 20px;
 }
 
 .container {
@@ -63,7 +63,7 @@ body {
   width: 100%;
   height: 100%;
 }
-.cash-register img {
+.cashier img {
   display: block;
   width: 200px;
   height: 200px;
@@ -84,7 +84,7 @@ body {
   justify-content: space-between;
 }
 
-.jip-container {
+/* .jip-container {
   display: inline-block;
   width: 100px;
   background: yellow;
@@ -92,7 +92,7 @@ body {
   position: absolute;
   left: 0;
   top: 0;
-}
+} */
 
 h2 {
   color: blue;
@@ -119,6 +119,7 @@ h2 {
 .door-plant-region {
   display: flex;
   align-items: flex-start;
+  border-bottom: 32px solid rgb(41, 40, 40);
 }
 
 .security {

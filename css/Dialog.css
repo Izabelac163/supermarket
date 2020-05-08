@@ -3,14 +3,14 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: auto;
   width: 20vw;
   padding: 10px;
-  background: linear-gradient(to top, #00ccff 0%, #00ff00 100%);
+  background: rebeccapurple;
   border-radius: 12px;
   display: flex;
   justify-content: center;
   align-items: center;
+  color: white;
 }
 
 form {
@@ -19,12 +19,12 @@ form {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  font-size: 25px;
+  font-size: 15px;
 }
 
 form:hover {
   /* transform: rotate(180deg); */
-  border: 1px solid deeppink;
+  border: 1px solid grey;
 }
 
 form > .myInput {
@@ -39,7 +39,7 @@ form > .myInput {
   width: 90%;
   height: 40px;
   background-color: rgb(255, 6, 143);
-  margin-bottom: 20px;
+  margin: 20px 10px;
   font-size: 20px;
   font-family: "Zhi Mang Xing", cursive;
   border-radius: 50%;
